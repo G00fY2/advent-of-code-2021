@@ -3,9 +3,9 @@ import java.math.BigInteger
 import java.security.MessageDigest
 
 /**
- * Reads lines from the given input txt file.
+ * Reads lines from the given input file.
  */
-fun readInput(name: String): List<String> = File("src/main/resources", "$name.txt").readLines()
+fun readInputAsLines(name: String): List<String> = File("src/main/resources", name).readLines()
 
 /**
  * Converts string to md5 hash.
